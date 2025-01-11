@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Авторизация</title>
+    <link rel="icon" href="https://zonafilm.ru/favicon.svg">
+    <link rel="stylesheet" href="images/static/css/styles.css" data-n-g="">
+</head>
+<body style="overflow: auto;">
+<div id="__next">
+    <div class="h-screen flex flex-col">
+        <div id="progress-page" class="absolute top-0 w-full bg-transparent">
+            <div class="progress-page w-full h-1" style="width: 0%;"></div>
+        </div>
+        <div data-testid="Layout" class="bg-main-color-500 layout-container w-full">
+            <header class="layout-child header flex justify-between gap-5">
+                <div class="w-full flex items-center gap-9 justify-between lg:justify-start">
+                    <button type="button" class="w-8 lg:hidden flex items-center" aria-label="Меню"><span
+                            class="text-bran bounceIn" data-testid="Icon"><svg width="30" height="30"><use
+                            href=""></use></svg></span><span class="absolute bounceOut"
+                                                             data-testid="Icon"><svg width="30"
+                                                                                     height="30"><use
+                            href=""></use></svg></span></button>
+                    <a class="header-link flex items-center lg:h-full" title="Главная страница"
+                       aria-label="Главная страница" href="catalog"><img alt="Зона Фильмов"
+                                                                            fetchpriority="high" width="219"
+                                                                            height="32" decoding="async"
+                                                                            data-nimg="1"
+                                                                            style="color:transparent"
+                                                                            srcset="assets/logo.png"
+                                                                            src="assets/logo.png"></a>
+                    <nav class="navigation font-medium w-full lg:w-auto h-screen lg:h-full lg:flex gap-9 lg:bg-transparent absolute lg:static bg-main-color-800 z-50 -left-full">
+                        <a class="header-link flex items-center lg:h-full header-activeBorder group" title="Фильмы"
+                           href="catalog">
+                            <div class="header-linkInner w-full text-center border-b capitalize lg:uppercase lg:border-0 border-main-color-600">
+                                Фильмы
+                            </div>
+                        </a><a class="header-link flex items-center lg:h-full group" title="Сериалы"
+                               href="catalog">
+                        <div class="header-linkInner w-full text-center border-b capitalize lg:uppercase lg:border-0 border-main-color-600">
+                            Сериалы
+                        </div>
+                    </a><a class="header-link flex items-center lg:h-full group" title="Избранное">
+                        <div class="header-linkInner relative w-full text-center border-b lg:border-0 border-main-color-600">
+                            <span class="hidden lg:block" data-testid="Icon"><svg width="30" height="30"><use
+                                    href=""></use></svg></span><span class="lg:hidden">Избранное</span>
+                        </div>
+                    </a>
+                        <div class="block lg:hidden"><a
+                                class="header-linkInner  w-full text-center border-b capitalize lg:uppercase lg:border-0 border-main-color-600"
+                                href="">
+                            <button type="button"
+                                    class="px-3 py-1.5 text-nowrap rounded-t lg:hover:bg-main-color-600 lg:focus:bg-main-color-600 flex items-center">
+                                Регистрация
+                            </button>
+                        </a></div>
+
+                    </nav>
+                    <div class="absolute z-50 bg-main-color-800 w-full h-[70px] transition-all duration-500 ease-out lg:relative lg:bg-transparent lg:w-auto flex-1 -left-full lg:left-0">
+                        <div class="px-4 flex items-center gap-3 h-full lg:mt-0 lg:px-0">
+                            <button type="button" class="lg:hidden text-main-color-500 flex items-center"
+                                    aria-label="Закрыть"><span class="" data-testid="Icon"><svg width="18" height="18"><use
+                                    href=""></use></svg></span></button>
+                            <div data-testid="Input" class="w-full relative"><input
+                                    class="search-input text-ellipsis w-full outline-none rounded-full py-1.5 px-4 placeholder:text-light-color/50 text-white bg-main-color-900 outline-none pr-[40px]"
+                                    placeholder="Поиск фильмов и сериалов" type="text" name="search-input"
+                                    title="Поиск фильмов и сериалов" autocomplete="off" value=""></div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex justify-center flex gap-1 items-center"><a rel="nofollow noopener"
+                                                                                          class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                                                                                          target="_blank"
+                                                                                          href="https://rutube.ru/"><img
+                            alt="rutube" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                            style="color:transparent" src="assets/socials/rutube.webp"></a><a rel="nofollow noopener"
+                                                                                                 class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                                                                                                 target="_blank"
+                                                                                                 href="https://t.me/"><img
+                            alt="telegram" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                            style="color:transparent" src="assets/socials/telegram.webp"></a><a
+                            rel="nofollow noopener"
+                            class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                            target="_blank"
+                            href="https://www.youtube.com/"><img
+                            alt="youtube" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                            style="color:transparent" src="assets/socials/youtube.webp"></a></div>
+                    <button type="button" class="lg:hidden p-1.5 flex items-center" aria-label="Поиск"><span
+                            class="bounceIn" data-testid="Icon"><svg width="22" height="22"><use
+                            href=""></use></svg></span></button>
+                </div>
+                <div class="relative hidden lg:flex self-center ml-3">
+                    <a
+                            href=""
+                            class=" w-9 h-9 rounded-full items-center justify-center bg-brand-color hover:bg-brand-color-sub focus:bg-brand-color-sub flex items-center"
+                            title="Регистрация" aria-label="Регистрация"><span class="text-light-color"
+                                                                               data-testid="Icon"><img
+                            src="images/icons/profile_icon.png" alt="0" width="16"
+                            height="16"></span></a>
+                </div>
+            </header>
+        </div>
+        
+        
+        <div class="bg-main-color-800 flex-1 relative">
+            <div data-testid="Layout" class="layout-container w-full">
+                <div class="layout-child pt-14">
+                    <form class="max-w-[343px] mb-8" method="Post">
+                        <div class="flex flex-wrap items-baseline gap-5"><h1 class="text-xl lg:text-2xl font-normal">
+                            Вход</h1><a
+                                class="underline text-sm lg:text-base text-brand-color hover:text-brand-color-sub"
+                                href="register">У меня нет аккаунта</a></div>
+                        <div class="flex flex-col gap-5 mt-8"><label for="Эл.почта"
+                                                                     class="grid grid-cols-[1fr_215px] items-center">
+                            <div class="text-sm lg:text-base">Эл.почта</div>
+                            <div data-testid="Input"
+                                 class="feature-form-input max-w-[225px] placeholder:text-sm placeholder:lg:text-base relative">
+                                <input class="search-input text-ellipsis w-full outline-none rounded-full py-1.5 px-4 placeholder:text-light-color/50 text-white bg-main-color-900 outline-none"
+                                       placeholder="Эл.почта" type="text" id="Эл.почта" name="email" required="" value=""></div>
+                        </label><label for="Пароль" class="grid grid-cols-[1fr_215px] items-center">
+                            <div class="text-sm lg:text-base">Пароль</div>
+                            <div data-testid="Input"
+                                 class="feature-form-input max-w-[225px] placeholder:text-sm placeholder:lg:text-base relative">
+                                <input class="search-input text-ellipsis w-full outline-none rounded-full py-1.5 px-4 placeholder:text-light-color/50 text-white bg-main-color-900 outline-none"
+                                       placeholder="Пароль" type="password" id="Пароль" name="password" required="" value=""></div>
+                        </label></div>
+                        <div class="grid grid-cols-[1fr_215px] mt-7">
+                            <div class="relative flex items-center gap-5 col-start-2">
+                                <button type="submit"
+                                        class="bg-brand-color hover:bg-brand-color-sub px-5 py-1.5 rounded-lg flex items-center">
+                                    Войти
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div data-testid="Layout" class="bg-main-color-900 layout-container w-full">
+            <footer id="footer" class="layout-child pt-8 pb-11 items-center justify-between bg-main-color-900 ">
+                <div class="grid items-center md:flex flex-col md:flex-end flex-wrap gap-3 items-start md:flex-row md:items-center">
+                    <a class="  hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out  md:mb-0"
+                       href="catalog"><img alt="logo" loading="lazy" width="134" height="20"
+                                              decoding="async" data-nimg="1" style="color:transparent"
+                                              src="assets/logo.png"></a>
+                    <div class="col-start-1 row-start-3 flex flex-col gap-2.5 md:items-center order-3 md:flex-row md:order-none md:mt-0 md:ml-auto lg:ml-2 lg:mr-20 text-sm md:text-base">
+                        <span>Спасибо, что делитесь с&nbsp;друзьями</span>
+                        <div class="flex gap-1 items-center"><a rel="nofollow noopener"
+                                                                class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                                                                target="_blank"
+                                                                href="https://vk.com/batat106?z=video-150550417_456252371%2Fpl_362776899_-2 "><img
+                                alt="вконтакте" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                                style="color:transparent" src="assets/socials/vk.webp"></a><a rel="nofollow noopener"
+                                                                                                 class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                                                                                                 target="_blank"
+                                                                                                 href="https://ok.ru/"><img
+                                alt="одноклассники" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                                style="color:transparent" src="assets/socials/ok.webp"></a></div>
+                    </div>
+                    <div class="col-start-2 row-start-3 items-end flex flex-col gap-2.5 md:items-center order-3 md:flex-row md:order-none md:mt-0 md:ml-auto lg:ml-0 text-sm md:text-base">
+                        <span>Мы в соцсетях</span>
+                        <div class="flex gap-1 items-center"><a rel="nofollow noopener"
+                                                                class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                                                                target="_blank"
+                                                                href="https://www.youtube.com"><img
+                                alt="youtube" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                                style="color:transparent" src="assets/socials/youtube.webp"></a><a
+                                rel="nofollow noopener"
+                                class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                                target="_blank" href="https://rutube.ru/"><img alt="rutube"
+                                                                               loading="lazy"
+                                                                               width="24" height="24"
+                                                                               decoding="async"
+                                                                               data-nimg="1"
+                                                                               style="color:transparent"
+                                                                               src="assets/socials/rutube.webp"></a><a
+                                rel="nofollow noopener"
+                                class="hover:scale-110 focus:scale-110 transition-transform duration-300 ease-out"
+                                target="_blank" href="https://t.me/"><img alt="telegram" loading="lazy"
+                                                                          width="24" height="24"
+                                                                          decoding="async"
+                                                                          data-nimg="1"
+                                                                          style="color:transparent"
+                                                                          src="assets/socials/telegram.webp"></a>
+                        </div>
+                    </div>
+                    <div class="col-start-1 row-start-2  text-main-color-200 w-full lg:w-auto md:text-end ml-auto"><span
+                            class="hidden xl:inline">Почта для связи:&nbsp;</span><a
+                            class="text-main-color-100 text-sm md:text-base underline">bulat.tkebuch@gmail.com</a>
+                    </div>
+                    <a class="col-start-2 row-start-1 underline md:w-full text-sm md:text-base text-end">Пользовательское
+                        соглашение</a></div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

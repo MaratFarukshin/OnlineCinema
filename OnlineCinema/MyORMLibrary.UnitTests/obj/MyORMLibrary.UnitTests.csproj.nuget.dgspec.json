@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary.UnitTests\\MyORMLibrary.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary.UnitTests\\MyORMLibrary.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary.UnitTests\\MyORMLibrary.UnitTests.csproj",
+        "projectName": "MyORMLibrary.UnitTests",
+        "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary.UnitTests\\MyORMLibrary.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
+        "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj": {
+                "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Marat\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj",
+        "projectName": "MyORMLibrary",
+        "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj",
+        "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
+        "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\Marat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.0-preview2.24304.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Marat\\.dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

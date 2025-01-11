@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHttpServer.unitTest\\MyHttpServer.unitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\HttpServerLibrary\\HttpServerLibrary.csproj",
+        "projectName": "HttpServerLibrary",
+        "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\HttpServerLibrary\\HttpServerLibrary.csproj",
+        "packagesPath": "C:\\Users\\bulat-laptop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\HttpServerLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bulat-laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHttpServer.unitTest\\MyHttpServer.unitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHttpServer.unitTest\\MyHttpServer.unitTest.csproj",
+        "projectName": "MyHttpServer.unitTest",
+        "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHttpServer.unitTest\\MyHttpServer.unitTest.csproj",
+        "packagesPath": "C:\\Users\\bulat-laptop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHttpServer.unitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bulat-laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\MyHTTPServer.csproj": {
+                "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\MyHTTPServer.csproj"
+              },
+              "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\TemplateEngine\\TemplateEngine.csproj": {
+                "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\TemplateEngine\\TemplateEngine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\MyHTTPServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\MyHTTPServer.csproj",
+        "projectName": "MyHTTPServer",
+        "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\MyHTTPServer.csproj",
+        "packagesPath": "C:\\Users\\bulat-laptop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bulat-laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+                "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\HttpServerLibrary\\HttpServerLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\TemplateEngine\\TemplateEngine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\TemplateEngine\\TemplateEngine.csproj",
+        "projectName": "TemplateEngine",
+        "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\TemplateEngine\\TemplateEngine.csproj",
+        "packagesPath": "C:\\Users\\bulat-laptop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\TemplateEngine\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bulat-laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\MyHTTPServer.csproj": {
+                "projectPath": "C:\\Users\\bulat-laptop\\Downloads\\MyHTTPServer\\MyHTTPServer\\MyHTTPServer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

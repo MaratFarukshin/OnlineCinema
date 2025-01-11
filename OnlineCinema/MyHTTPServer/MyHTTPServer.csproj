@@ -1,0 +1,2951 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Update="Program.cs">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Compile>
+      <Compile Update="services\IMailService.cs">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Compile>
+      <Compile Update="services\MailService.cs">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="config.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\500.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\accordion.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\alerts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\badge.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\blank-page.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\block-ui.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\buttons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\calendar.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\cards.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\charts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\contact.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\crypto.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\data-tables.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\dropdowns.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\email.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\err404.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\file-manager.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\form-elements.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\form-layout.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\form-validation.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\icons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\invoice.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\list-group.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\lockscreen.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\login.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\modal.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\pagination.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\popovers.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\price.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\progress.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\register.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\select2.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\session-timeout.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\social.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\spinners.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\tables.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\toasts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\tree-view.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\typography.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\css\custom.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\css\main.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\crypto\btc.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\crypto\btcc.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\crypto\eth.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\crypto\ltc.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\500.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\bg-1.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\card-bg.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\card-image.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\premium.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\profile-bg.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\images\avatars\profile-image.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\blockui.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\charts.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\crypto.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\dashboard.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\datatables.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\select2.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\session.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\pages\tree.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\js\main.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\ca.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\cs.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\de.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\el.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\en.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\es.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\fi.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\fr.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\he.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\hi.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\hr.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\hy.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\id.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\it.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\ka.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\ko.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\lt.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\nb.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\nl.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\pl.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\pt.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\pt-br.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\rs.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\ru.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\se.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\sk.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\sl.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\sq.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\th.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\tr.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\ua.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\locales\zh-cn.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\apexcharts.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\apexcharts.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\apexcharts.amd.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\apexcharts.amd.js.LICENSE.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\apexcharts.common.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\apexcharts\apexcharts.esm.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\blockui\jquery.blockUI.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap-grid.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap-grid.rtl.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap-reboot.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap-reboot.rtl.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap-utilities.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap-utilities.rtl.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\css\bootstrap.rtl.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\js\bootstrap.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\js\bootstrap.bundle.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\bootstrap\js\bootstrap.esm.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\chartjs\chart.bundle.min.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\css\dataTables.bootstrap.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\css\dataTables.bootstrap4.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\css\dataTables.foundation.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\css\dataTables.jqueryui.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\css\dataTables.semanticui.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\css\jquery.dataTables.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\images\sort_asc.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\images\sort_asc_disabled.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\images\sort_both.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\images\sort_desc.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\images\sort_desc_disabled.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\js\dataTables.bootstrap.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\js\dataTables.bootstrap4.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\js\dataTables.foundation.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\js\dataTables.jqueryui.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\js\dataTables.semanticui.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\DataTables-1.10.20\js\jquery.dataTables.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\datatables.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\DataTables\datatables.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\css\all.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\css\brands.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\css\fontawesome.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\css\regular.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\css\solid.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\css\svg-with-js.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\css\v4-shims.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\js\all.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\js\brands.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\js\fontawesome.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\js\regular.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\js\solid.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\js\v4-shims.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_animated.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_bordered-pulled.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_core.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_fixed-width.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_icons.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_larger.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_list.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_mixins.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_rotated-flipped.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_screen-reader.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_shims.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_stacked.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\_variables.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\brands.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\fontawesome.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\regular.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\solid.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\less\v4-shims.less">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\metadata\categories.yml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\metadata\icons.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\metadata\icons.yml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\metadata\shims.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\metadata\shims.yml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\metadata\sponsors.yml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_animated.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_bordered-pulled.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_core.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_fixed-width.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_icons.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_larger.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_list.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_mixins.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_rotated-flipped.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_screen-reader.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_shims.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_stacked.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\_variables.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\brands.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\fontawesome.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\regular.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\solid.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\scss\v4-shims.scss">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\sprites\brands.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\sprites\regular.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\sprites\solid.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\500px.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\accessible-icon.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\accusoft.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\acquisitions-incorporated.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\adn.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\adversal.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\affiliatetheme.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\algolia.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\alipay.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\amazon.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\amazon-pay.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\amilia.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\android.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\angellist.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\angrycreative.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\angular.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\app-store.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\app-store-ios.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\apper.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\apple.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\apple-pay.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\asymmetrik.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\audible.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\autoprefixer.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\avianex.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\aviato.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\aws.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\bandcamp.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\behance.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\behance-square.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\bimobject.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\bitbucket.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\bitcoin.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\bity.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\black-tie.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\blackberry.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\blogger.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\blogger-b.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\bluetooth.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\bluetooth-b.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\btc.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\buromobelexperte.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\buysellads.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-amazon-pay.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-amex.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-apple-pay.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-diners-club.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-discover.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-jcb.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-mastercard.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-paypal.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-stripe.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cc-visa.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\centercode.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\chrome.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cloudscale.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cloudsmith.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cloudversify.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\codepen.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\codiepie.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\connectdevelop.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\contao.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cpanel.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-by.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-nc.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-nc-eu.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-nc-jp.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-nd.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-pd.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-pd-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-remix.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-sa.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-sampling.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-sampling-plus.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-share.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\creative-commons-zero.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\critical-role.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\css3.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\css3-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\cuttlefish.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\d-and-d.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\d-and-d-beyond.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\dashcube.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\delicious.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\deploydog.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\deskpro.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\dev.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\deviantart.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\digg.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\digital-ocean.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\discord.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\discourse.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\dochub.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\docker.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\draft2digital.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\dribbble.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\dribbble-square.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\dropbox.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\drupal.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\dyalog.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\earlybirds.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\ebay.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\edge.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\elementor.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\ello.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\ember.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\empire.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\envira.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\erlang.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\ethereum.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\etsy.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\expeditedssl.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\facebook.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\facebook-f.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\facebook-messenger.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\facebook-square.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\fantasy-flight-games.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\firefox.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\first-order.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\first-order-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\firstdraft.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\flickr.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\flipboard.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\fly.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\font-awesome.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\font-awesome-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\font-awesome-flag.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\font-awesome-logo-full.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\fonticons.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\fonticons-fi.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\fort-awesome.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\fort-awesome-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\forumbee.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\foursquare.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\free-code-camp.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\freebsd.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\fulcrum.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\galactic-republic.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\galactic-senate.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\get-pocket.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\gg.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\gg-circle.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\git.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\git-square.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\github.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\github-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\github-square.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\brands\gitkraken.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\ad.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\address-book.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\address-card.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\adjust.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\air-freshener.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\align-center.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\align-justify.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\align-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\align-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\allergies.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\ambulance.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\american-sign-language-interpreting.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\anchor.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-double-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-double-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-double-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-double-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angle-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\angry.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\ankh.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\apple-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\archive.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\archway.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-alt-circle-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-alt-circle-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-alt-circle-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-alt-circle-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-circle-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-circle-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-circle-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-circle-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrow-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrows-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrows-alt-h.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\arrows-alt-v.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\assistive-listening-systems.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\asterisk.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\at.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\atlas.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\atom.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\audio-description.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\award.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\backspace.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\backward.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\balance-scale.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\ban.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\band-aid.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\barcode.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bars.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\baseball-ball.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\basketball-ball.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bath.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\battery-empty.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\battery-full.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\battery-half.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\battery-quarter.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\battery-three-quarters.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bed.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\beer.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bell.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bell-slash.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bezier-curve.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bible.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bicycle.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\binoculars.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\birthday-cake.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\blender.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\blender-phone.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\blind.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bold.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bolt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bomb.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bone.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\book-dead.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\book-open.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\book-reader.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bookmark.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bowling-ball.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\box.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\box-open.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\boxes.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\braille.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\brain.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\briefcase.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\briefcase-medical.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\broadcast-tower.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\broom.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\brush.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bug.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\building.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bullhorn.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bullseye.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\burn.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bus.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\bus-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\business-time.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\calculator.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\calendar.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\calendar-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\calendar-check.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\calendar-minus.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\calendar-plus.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\calendar-times.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\camera.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\camera-retro.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\campground.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cannabis.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\capsules.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\car.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\car-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\car-battery.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\car-crash.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\car-side.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-square-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-square-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-square-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-square-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\caret-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cart-arrow-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cart-plus.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cat.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\certificate.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chair.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chalkboard.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chalkboard-teacher.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\charging-station.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chart-area.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chart-bar.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chart-line.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chart-pie.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\check.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\check-circle.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\check-double.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\check-square.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess-bishop.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess-board.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess-king.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess-knight.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess-pawn.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess-queen.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chess-rook.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-circle-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-circle-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-circle-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-circle-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-down.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-left.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-right.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\chevron-up.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\child.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\church.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\circle.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\circle-notch.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\city.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\clipboard.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\clipboard-check.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\clipboard-list.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\clock.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\clone.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\closed-captioning.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-download-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-meatball.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-moon.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-moon-rain.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-rain.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-showers-heavy.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-sun.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-sun-rain.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cloud-upload-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cocktail.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\code.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\code-branch.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\coffee.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cog.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cogs.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\coins.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\columns.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\comment.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\comment-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\comment-dollar.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\comment-dots.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\comment-slash.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\comments.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\comments-dollar.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\compact-disc.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\compass.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\compress.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\concierge-bell.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cookie.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cookie-bite.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\copy.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\copyright.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\couch.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\credit-card.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\crop.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\crop-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cross.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\crosshairs.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\crow.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\crown.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cube.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cubes.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\cut.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\database.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\deaf.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\democrat.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\desktop.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dharmachakra.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\diagnoses.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-d6.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-d20.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-five.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-four.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-one.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-six.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-three.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dice-two.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\digital-tachograph.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\directions.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\divide.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dizzy.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dna.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dog.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dollar-sign.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dolly.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dolly-flatbed.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\donate.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\door-closed.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\door-open.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dot-circle.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dove.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\download.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\drafting-compass.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dragon.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\draw-polygon.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\drum.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\drum-steelpan.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\drumstick-bite.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dumbbell.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\dungeon.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\edit.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\eject.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\ellipsis-h.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\ellipsis-v.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\envelope.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\envelope-open.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\envelope-open-text.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\envelope-square.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\equals.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\eraser.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\euro-sign.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\exchange-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\exclamation.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\exclamation-circle.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\exclamation-triangle.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\expand.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\expand-arrows-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\external-link-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\external-link-square-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\eye.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\eye-dropper.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\eye-slash.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fast-backward.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fast-forward.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fax.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\feather.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\feather-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\female.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fighter-jet.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-archive.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-audio.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-code.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-contract.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-csv.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-download.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-excel.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-export.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-image.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-import.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-invoice.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-invoice-dollar.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-medical.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-medical-alt.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-pdf.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-powerpoint.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-prescription.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-signature.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-upload.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-video.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\file-word.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fill.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fill-drip.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\film.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\filter.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fingerprint.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fire.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fire-extinguisher.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\first-aid.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fish.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\fist-raised.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\flag.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\flag-checkered.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\flag-usa.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\flask.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\flushed.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\svgs\solid\folder.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-brands-400.eot">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-brands-400.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-brands-400.ttf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-brands-400.woff">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-brands-400.woff2">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-regular-400.eot">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-regular-400.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-regular-400.ttf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-regular-400.woff">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-regular-400.woff2">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-solid-900.eot">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-solid-900.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-solid-900.ttf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-solid-900.woff">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\font-awesome\webfonts\fa-solid-900.woff2">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\fullcalendar\main.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\fullcalendar\main.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\demos\index.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\demos\defaultbinding.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\demos\autologoutsync.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\demos\autologout.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\dist\idle-timer.0.9.3.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\demos\respond.proxy.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\demos\respond.proxy.gif">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\dist\idle-timer.1.0.1.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\dist\idle-timer.1.0.0.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\dist\idle-timer.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\dist\idle-timer.1.1.0.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\libs\jquery\jquery.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\libs\jquery-loader.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\libs\qunit\qunit.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\libs\qunit\qunit.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\Gruntfile.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\README.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\package.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\src\idle-timer.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\CONTRIBUTING.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\CHANGELOG.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\bower.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\LICENSE-MIT">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\jquery-idletimer.v12.suo">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\idle-timer.jquery.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\test\idle-timer.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\idle-timer\test\idle-timer_test.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\jquery\jquery-3.4.1.min.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\pace\pace.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\pace\pace.min.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\perfectscroll\perfect-scrollbar.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\perfectscroll\perfect-scrollbar.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\perfectscroll\perfect-scrollbar.common.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\perfectscroll\perfect-scrollbar.esm.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\popper\popper.min.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\css\select2.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\css\select2.min.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\af.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ar.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\az.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\bg.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\bn.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\bs.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ca.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\cs.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\da.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\de.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\dsb.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\el.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\en.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\es.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\et.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\eu.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\fa.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\fi.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\fr.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\gl.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\he.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\hi.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\hr.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\hsb.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\hu.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\hy.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\id.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\is.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\it.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ja.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ka.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\km.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ko.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\lt.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\lv.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\mk.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ms.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\nb.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ne.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\nl.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\pl.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ps.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\pt.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\pt-BR.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ro.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\ru.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\sk.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\sl.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\sq.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\sr.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\sr-Cyrl.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\sv.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\th.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\tk.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\tr.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\uk.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\vi.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\zh-CN.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\i18n\zh-TW.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\select2.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\select2\js\select2.full.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default-dark\style.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default-dark\40px.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default-dark\32px.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default\32px.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default-dark\throbber.gif">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default\throbber.gif">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default\style.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\themes\default\40px.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\sparkline\jquery.sparkline.min.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\assets\plugins\treejs\jstree.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\500.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\accordion.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\alerts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\badge.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\blank-page.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\block-ui.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\buttons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\calendar.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\cards.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\charts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\contact.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\crypto.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\data-tables.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\dropdowns.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\email.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\err404.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\file-manager.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\form-elements.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\form-layout.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\form-validation.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\icons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\index.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\invoice.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\list-group.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\lockscreen.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\login.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\modal.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\pagination.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\popovers.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\price.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\progress.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\register.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\select2.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\session-timeout.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\social.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\spinners.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\tables.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\toasts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\tree-view.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\theme\templates\admin\typography.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-reset-password-basic.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-reset-password-cover.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-reset-password-simple.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-sign-in-cover.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-sign-in-simple.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-sign-up-basic.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-sign-up-cover.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\authentication-sign-up-simple.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\charts-apex-chart.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\charts-chartjs.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\charts-other.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\charts-peity.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-accordions.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-alerts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-badges.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-buttons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-cards.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-carousels.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-list-groups.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-media-object.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-modals.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-navs-tabs.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-notifications.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-paginations.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-popovers-tooltips.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-progress-bars.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\component-spinners.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-checkout-complete.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-checkout-details.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-checkout-payment.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-checkout-review.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-checkout-shipping.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-product-comparison.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-product-details.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-shop-cart.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-shop-grid-view.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-shop-grid-view-top-filter.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\ecommerce-shop-list-view.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-date-time-pickes.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-elements.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-file-upload.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-input-group.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-layouts.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-radios-and-checkboxes.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-select2.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-validations.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\form-wizard.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\icons-boxicons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\icons-feather-icons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\icons-line-icons.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\index2.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\index3.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\map-google-maps.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\map-vector-maps.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-edit-profile.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-errors-404-error.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-errors-500-error.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-errors-coming-soon.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-faq.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-invoices.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-pricing-tables.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-starter-page.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-to-do.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\pages-user-profile.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\table-advance-tables.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\table-basic-table.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\table-datatable.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\widgets-data-widgets.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\ltr\widgets-static-widgets.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Templates\Pages\Dashboard\index.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\fonts\roboto-black.woff2">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\fonts\roboto-bold.woff2">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\fonts\roboto-medium.woff2">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\fonts\roboto-regular.woff2">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\logo.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\socials\ok.webp">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\socials\rutube.webp">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\socials\telegram.webp">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\socials\vk.webp">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\socials\youtube.webp">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\_next\static\css\aa09e347d2d1c4f3.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\_next\static\WwTGCsYkjJyvR_0i_Lb9C\_buildManifest.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\_next\static\WwTGCsYkjJyvR_0i_Lb9C\_ssgManifest.js">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\svgs\arrow.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\assets\svgs\profile_icon.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6b6b2c89e58f3b1d4f402666f6d622c4.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\29b42be1456b3367b2abb2edc02f6433.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\84b5b002a0f0d32f5a96d0f19bc9de76.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\911.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\888096.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\1008444.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\1045172.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\1273798.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\1311936.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\1337679.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\4397797.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\4427514.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\4480174.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\4673542.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\4947067.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5124609.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5171525.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5212280.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5313756.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5413372.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5452772.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5510094.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5511381.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\5995816.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6037107.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6043214.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6065018.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6281561.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6584400.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6688899.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\d84edd23935c17c8c9a67a10d7585d2f.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\deadpool_and_wolverine.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\dune.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\ebbee7d971e0c8cc915a5dde32fe348e.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\gothem.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\load.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\logo.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\moana.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\offworld.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\outlander.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\profile-1335-svgrepo-com (2).svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\star.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\the_witcher.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Templates\Pages\Movie\index2.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Templates\Pages\Auth\sign_in.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Templates\Pages\Auth\sign_up.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\Css\sign_in.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\Css\sign_up.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\Css\style.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\Css\style2.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\ca576dd086f60fd6d38bcbc69a7f78b0.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\d68d368b1fdb1aa9448170f4b8d35a3c.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\e3ef1f918d437cd088dd1639010c7069.svg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Templates\Pages\Catalog\index.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\6b6b2c89e58f3b1d4f402666f6d622c4.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\29b42be1456b3367b2abb2edc02f6433.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\84b5b002a0f0d32f5a96d0f19bc9de76.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\ca576dd086f60fd6d38bcbc69a7f78b0.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\d68d368b1fdb1aa9448170f4b8d35a3c.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\d84edd23935c17c8c9a67a10d7585d2f.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\e3ef1f918d437cd088dd1639010c7069.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\ebbee7d971e0c8cc915a5dde32fe348e.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="public\images\profile-1335-svgrepo-com (2).png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HttpServerLibrary\HttpServerLibrary.csproj" />
+      <ProjectReference Include="..\MyORMLibrary\MyORMLibrary.csproj" />
+      <ProjectReference Include="..\TemplateEngine\TemplateEngine.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.0-preview3.24332.3" />
+    </ItemGroup>
+
+</Project>

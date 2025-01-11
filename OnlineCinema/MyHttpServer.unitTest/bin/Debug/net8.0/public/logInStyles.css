@@ -1,0 +1,85 @@
+﻿@font-face {
+    font-family: 'Electronic Arts Text', 'Electronic Arts Display', apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #1d2033;
+    font-family: 'Electronic Arts Text', 'Electronic Arts Display', apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.container {
+    margin: 5% 35%;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.header p {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.register-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-panel p {
+    text-align: left;
+    color: white;
+    font-size: 15px;
+}
+
+.register-panel input {
+    border-radius: 8px;
+    border-color: #62626f;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #141824;
+    color: white;
+    /*outline: none;*/
+}
+
+.register-panel input:hover {
+    border-color: #908e97;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.register-panel button {
+    background-color: #235fe3;
+    color: white;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #235fe3;
+    font-size: 16px;
+}
+
+.register-panel button:hover {
+    background-color: #6087de;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.register-panel label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.register-panel label input {
+    margin-right: 10px;
+}
