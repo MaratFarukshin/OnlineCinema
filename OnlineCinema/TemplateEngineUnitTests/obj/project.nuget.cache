@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JqcdNljSGeQ=",
+  "dgSpecHash": "NFPDtkiPiDk=",
   "success": true,
-  "projectFilePath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
+  "projectFilePath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marat\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Marat\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

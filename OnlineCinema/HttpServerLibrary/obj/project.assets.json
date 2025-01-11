@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
+      "projectUniqueName": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
       "projectName": "HttpServerLibrary",
-      "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
+      "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
       "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-      "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\obj\\",
+      "outputPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [

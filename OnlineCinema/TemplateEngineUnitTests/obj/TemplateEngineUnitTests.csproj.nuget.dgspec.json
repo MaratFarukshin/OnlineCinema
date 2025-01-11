@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj": {}
+    "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+    "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
+        "projectUniqueName": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
         "projectName": "HttpServerLibrary",
-        "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
+        "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj",
         "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-        "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\obj\\",
+        "outputPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj": {
+    "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj",
+        "projectUniqueName": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj",
         "projectName": "MyHTTPServer",
-        "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj",
+        "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj",
         "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-        "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\obj\\",
+        "outputPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -86,14 +86,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
-                "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj"
+              "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+                "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj"
               },
-              "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj": {
-                "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj"
+              "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj": {
+                "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj"
               },
-              "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
-                "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj"
+              "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
+                "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj": {
+    "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj",
+        "projectUniqueName": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj",
         "projectName": "MyORMLibrary",
-        "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj",
+        "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\MyORMLibrary.csproj",
         "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-        "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\obj\\",
+        "outputPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyORMLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -203,14 +203,14 @@
         }
       }
     },
-    "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj": {
+    "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
+        "projectUniqueName": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
         "projectName": "TemplateEngineUnitTests",
-        "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
+        "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
         "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-        "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\obj\\",
+        "outputPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -226,14 +226,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
-                "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj"
+              "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+                "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj"
               },
-              "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj": {
-                "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj"
+              "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj": {
+                "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj"
               },
-              "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
-                "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj"
+              "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
+                "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj"
               }
             }
           }
@@ -290,14 +290,14 @@
         }
       }
     },
-    "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
+    "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj",
+        "projectUniqueName": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj",
         "projectName": "TemplateEngine",
-        "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj",
+        "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj",
         "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-        "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\obj\\",
+        "outputPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [

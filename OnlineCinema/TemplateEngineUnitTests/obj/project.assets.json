@@ -2804,11 +2804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
+      "projectUniqueName": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
       "projectName": "TemplateEngineUnitTests",
-      "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
+      "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
       "packagesPath": "C:\\Users\\Marat\\.nuget\\packages\\",
-      "outputPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\obj\\",
+      "outputPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngineUnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
@@ -2824,14 +2824,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
-              "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj"
+            "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+              "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\HttpServerLibrary\\HttpServerLibrary.csproj"
             },
-            "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj": {
-              "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj"
+            "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj": {
+              "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj"
             },
-            "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
-              "projectPath": "C:\\documents\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj"
+            "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj": {
+              "projectPath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\TemplateEngine\\TemplateEngine.csproj"
             }
           }
         }

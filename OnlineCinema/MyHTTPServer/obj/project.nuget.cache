@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3dtW1YKPsSY=",
+  "dgSpecHash": "COYHGTKk9q8=",
   "success": true,
-  "projectFilePath": "C:\\documents\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj",
+  "projectFilePath": "C:\\documents\\Online_Cinema\\OnlineCinema\\OnlineCinema\\MyHTTPServer\\MyHTTPServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marat\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Marat\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
