@@ -1,30 +1,18 @@
--- Создание базы данных
-CREATE DATABASE OnlineCinema;
-GO
-
--- Переключение на созданную базу данных
-USE OnlineCinema;
-GO
-
--- Создание таблицы "Countries"
 CREATE TABLE Countries (
     id INT IDENTITY(1,1) PRIMARY KEY,
     country NVARCHAR(255) NOT NULL UNIQUE
 );
 
--- Создание таблицы "Director"
 CREATE TABLE Director (
     id INT IDENTITY(1,1) PRIMARY KEY,
     director NVARCHAR(255) NOT NULL UNIQUE
 );
 
--- Создание таблицы "Genres"
 CREATE TABLE Genres (
     id INT IDENTITY(1,1) PRIMARY KEY,
     genre NVARCHAR(255) NOT NULL UNIQUE
 );
 
--- Создание таблицы "Films"
 CREATE TABLE Films (
     id INT IDENTITY(1,1) PRIMARY KEY,
     title NVARCHAR(255) NOT NULL,
@@ -41,18 +29,16 @@ CREATE TABLE Films (
     FOREIGN KEY (genre_id) REFERENCES Genres(id)
 );
 
--- Вставка данных в таблицу "Countries"
 INSERT INTO Countries (country) VALUES 
 (N'Япония');
 
--- Вставка данных в таблицу "Director"
 INSERT INTO Director (director) VALUES 
 (N'Christopher Nolan');
 
--- Вставка данных в таблицу "Genres"
+
 INSERT INTO Genres (genre) VALUES 
 (N'Фантастика');
 
--- Вставка данных в таблицу "Films"
+
 INSERT INTO Films (title, year, description, rating, duration, country_id, director_id, genre_id, poster_url) VALUES
 (N'Семь самураев', 1954, N'Эпическая история самураев, защищающих деревню.', 8.6, 207, 4, 4, 3, N'https://example.com/sevensamurai.jpg');

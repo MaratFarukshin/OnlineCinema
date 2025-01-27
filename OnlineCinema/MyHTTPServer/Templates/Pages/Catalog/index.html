@@ -416,12 +416,10 @@
                 <label class="header-search-btn" for="search-input" tabindex="0" title="Поиск"></label>
                 <div class="header-search-line">
                     <div class="header-search-line-title">
-                        
-                        
                         <div class="relative hidden lg:flex self-center ml-3">
-                            <a href="../login" class=" w-9 h-9 rounded-full items-center justify-center bg-brand-color hover:bg-brand-color-sub focus:bg-brand-color-sub flex items-center" title="Регистрация" aria-label="Регистрация">
+                            <a href="login" class=" w-9 h-9 rounded-full items-center justify-center bg-brand-color hover:bg-brand-color-sub focus:bg-brand-color-sub flex items-center" title="Регистрация" aria-label="Регистрация">
                                 <span class="text-light-color" data-testid="Icon">
-                                    <img src="images/profile-1335-svgrepo-com%20(2).png" alt="0" width="16" height="16">
+                                    <img src="images/profileIcon.png" alt="0" width="16" height="16">
                                 </span>
                             </a>
                         </div>
@@ -435,79 +433,111 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </header>
     <main class="l-content">
         <div class="l-wrap">
             <div class="js-filters">
-
-                <form class="filters js-filters-form" action="" method="get">
+                <div class="filters js-filters-form">
                     <div class="filter-items">
-    <span class="filters-item">
-        <form method="post">
-            <select onchange="this.form.submit()" class="filters-item-select " id="filter-id-genreId" name="genre">
-        <option value="0" selected="selected" label="Жанры">Жанры</option>
-                      <option value="драма" label="драма">драма</option>
-                      <option value="genre-komediia" label="комедия">комедия</option>
-                      <option value="genre-triller" label="триллер">триллер</option>
-                      <option value="genre-kriminal" label="криминал">криминал</option>
-                      <option value="genre-uzhasy" label="ужасы">ужасы</option>
-                      <option value="genre-prikliucheniia" label="приключения">приключения</option>
-                      <option value="genre-detektiv" label="детектив">детектив</option>
-                      <option value="genre-fantastika" label="фантастика">фантастика</option>
-                      <option value="genre-fentezi" label="фэнтези">фэнтези</option>
-                      <option value="genre-dokumentalnyi" label="документальный">документальный</option>
-                    </select>
-        </form>
-          </span><span class="filters-item">
-      <select class="filters-item-select " id="filter-id-year" name="year">
-        <option value="0" selected="selected" label="Год">Год</option>
-        <option value="year-2024" label="2024">2024</option>
-        <option value="year-2023" label="2023">2023</option>
-        <option value="year-2022" label="2022">2022</option>
-      </select>
-          </span>
-
                         <span class="filters-item">
-      <select class="filters-item-select " id="filter-id-country_id" name="country">
-        <option value="0" selected="selected" label="Страна">Страна</option>
-                              <option value="country-ssha" label="США">США</option>
-                      <option value="country-rossiia" label="Россия">Россия</option>
-                      <option value="country-velikobritaniia" label="Великобритания">Великобритания</option>
-                      <option value="country-italiia" label="Италия">Италия</option>
-                      <option value="country-kanada" label="Канада">Канада</option>
-                      <option value="country-indiia" label="Индия">Индия</option>
-                      <option value="country-avstraliia" label="Австралия">Австралия</option>
-                        </select>
-          </span>
-
+                            <form method="post">
+                                <select onchange="this.form.submit()" class="filters-item-select "  name="genre">
+                                    <option value="0" selected="selected">Жанры</option>
+                                    <option value="all">Все фильмы</option>
+                                    <option value="drama">драма</option>
+                                    <option value="comedy">комедия</option>
+                                    <option value="triller">триллер</option>
+                                    <option value="criminal">криминал</option>
+                                    <option value="horror" label="ужасы">ужасы</option>
+                                </select>
+                            </form>
+                        </span>
                         <span class="filters-item">
-      <select class="filters-item-select " id="filter-id-rating" name="rating">
-        <option value="0" selected="selected" label="Рейтинг">Рейтинг</option>
-                  <option value="rating-9" label="от 9">от 9</option>
-                    <option value="rating-8" label="от 8">от 8</option>
-                    <option value="rating-7" label="от 7">от 7</option>
-                    <option value="rating-6" label="от 6">от 6</option>
-                    <option value="rating-5" label="от 5">от 5</option>
-                    <option value="rating-4" label="от 4">от 4</option>
-                    <option value="rating-3" label="от 3">от 3</option>
-                    <option value="rating-2" label="от 2">от 2</option>
-                    <option value="rating-1" label="от 1">от 1</option>
-                </select>
-          </span>
-
+                            <form method="post">
+                                <select onchange="this.form.submit()" class="filters-item-select " name="year">
+                                    <option value="0" selected="selected" label="Год">Год</option>
+                                    <option value="year-2024" label="2024">2024</option>
+                                    <option value="year-2023" label="2023">2023</option>
+                                    <option value="year-2022" label="2022">2022</option>
+                                    <option value="year-2021" label="2021">2021</option>
+                                    <option value="year-2020" label="2020">2020</option>
+                                    <option value="year-2019" label="2019">2019</option>
+                                    <option value="year-2018" label="2018">2018</option>
+                                    <option value="year-2017" label="2017">2017</option>
+                                    <option value="year-2016" label="2016">2016</option>
+                                    <option value="year-2015" label="2015">2015</option>
+                                    <option value="year-2014" label="2014">2014</option>
+                                    <option value="year-2013" label="2013">2013</option>
+                                    <option value="year-2012" label="2012">2012</option>
+                                    <option value="year-2011" label="2011">2011</option>
+                                    <option value="year-2010" label="2010">2010</option>
+                                    <option value="year-2000s" label="2000-е">2000-е</option>
+                                    <option value="year-90s" label="90-е">90-е</option>
+                                    <option value="year-80s" label="80-е">80-е</option>
+                                    <option value="year-70s" label="70-е">70-е</option>
+                                    <option value="year-60s" label="60-е">60-е</option>
+                                    <option value="year-50s" label="50-е">50-е</option>
+                                    <option value="year-40s" label="40-е">40-е</option>
+                                    <option value="year-old" label="до 40-х">до 40-х</option>
+                                </select>
+                            </form>
+                        </span>
                         <span class="filters-item">
-      <select class="filters-item-select " id="filter-id-sort" name="sort">
-        <option value="0" label="По популярности">По популярности</option>
-        <option value="sort-rating" label="По рейтингу">По рейтингу</option>
-        <option value="sort-date" selected="selected" label="По дате выхода">По дате выхода</option>
-      </select>
-              <button class="filters-item-reset" type="button" title="Сбросить">×</button>
-          </span>
+                            <form method="post">
+                                <select onchange="this.form.submit()" class="filters-item-select " name="country">
+                                    <option value="0" selected="selected" label="Страна">Страна</option>
+                                    <option value="country-ssha" label="США">США</option>
+                                    <option value="country-rossiia" label="Россия">Россия</option>
+                                    <option value="country-frantciia" label="Франция">Франция</option>
+                                    <option value="country-velikobritaniia" label="Великобритания">Великобритания</option>
+                                    <option value="country-italiia" label="Италия">Италия</option>
+                                    <option value="country-kanada" label="Канада">Канада</option>
+                                    <option value="country-germaniia" label="Германия">Германия</option>
+                                    <option value="country-indiia" label="Индия">Индия</option>
+                                    <option value="country-iaponiia" label="Япония">Япония</option>
+                                    <option value="country-ispaniia" label="Испания">Испания</option>
+                                    <option value="country-gonkong" label="Гонконг">Гонконг</option>
+                                    <option value="country-koreia-iuzhnaia" label="Корея Южная">Корея Южная</option>
+                                    <option value="country-kitai" label="Китай">Китай</option>
+                                    <option value="country-avstraliia" label="Австралия">Австралия</option>
+                                    <option value="country-belgiia" label="Бельгия">Бельгия</option>
+                                    <option value="country-shvetciia" label="Швеция">Швеция</option>
+                                    <option value="country-polsha" label="Польша">Польша</option>
+                                    <option value="country-daniia" label="Дания">Дания</option>
+                                    <option value="country-meksika" label="Мексика">Мексика</option>
+                                    <option value="country-chekhiia" label="Чехия">Чехия</option>
+                                    <option value="country-niderlandy" label="Нидерланды">Нидерланды</option>
+                                    <option value="country-irlandiia" label="Ирландия">Ирландия</option>
+                                    <option value="country-ukraina" label="Украина">Украина</option>
+                                    <option value="country-shveitcariia" label="Швейцария">Швейцария</option>
+                                    <option value="country-norvegiia" label="Норвегия">Норвегия</option>
+                                    <option value="country-argentina" label="Аргентина">Аргентина</option>
+                                    <option value="country-vengriia" label="Венгрия">Венгрия</option>
+                                    <option value="country-avstriia" label="Австрия">Австрия</option>
+                                    <option value="country-tailand" label="Таиланд">Таиланд</option>
+                                    <option value="country-taivan" label="Тайвань">Тайвань</option>
+                                </select>
+                            </form>
+                        </span>
+                        <span class="filters-item">
+                            <form method="post">
+                                <select onchange="this.form.submit()" class="filters-item-select " name="rating">
+                                    <option value="0" selected="selected" label="Рейтинг">Рейтинг</option>
+                                    <option value="rating-9" label="от 9">от 9</option>
+                                    <option value="rating-8" label="от 8">от 8</option>
+                                    <option value="rating-7" label="от 7">от 7</option>
+                                    <option value="rating-6" label="от 6">от 6</option>
+                                    <option value="rating-5" label="от 5">от 5</option>
+                                    <option value="rating-4" label="от 4">от 4</option>
+                                    <option value="rating-3" label="от 3">от 3</option>
+                                    <option value="rating-2" label="от 2">от 2</option>
+                                    <option value="rating-1" label="от 1">от 1</option>
+                                </select>
+                            </form>
+                        </span>
                     </div>
-                </form>
-
+                </div>
             </div>
             <div class="results-wrap">
                 <h1 class="results-top-title ">Популярные фильмы </h1>

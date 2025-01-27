@@ -34,3 +34,16 @@ C:\documents\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrar
 C:\documents\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\refint\MyORMLibrary.dll
 C:\documents\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.pdb
 C:\documents\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\ref\MyORMLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\bin\Debug\net8.0\MyORMLibrary.deps.json
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\bin\Debug\net8.0\MyORMLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\bin\Debug\net8.0\MyORMLibrary.pdb
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.csproj.AssemblyReference.cache
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.AssemblyInfoInputs.cache
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.AssemblyInfo.cs
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.csproj.CoreCompileInputs.cache
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.sourcelink.json
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\refint\MyORMLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.pdb
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\MyORMLibrary\obj\Debug\net8.0\ref\MyORMLibrary.dll

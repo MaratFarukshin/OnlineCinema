@@ -16,8 +16,6 @@ public class ORMContext
 
     public T Create<T>(T entity, string tableName) where T : class
     {
-        // Пример реализации метода Create
-        // Параметризованный SQL-запрос для вставки данных
         throw new NotImplementedException();
     }
 

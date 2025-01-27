@@ -34,3 +34,16 @@ C:\documents\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpSe
 C:\documents\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\refint\HttpServerLibrary.dll
 C:\documents\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.pdb
 C:\documents\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\ref\HttpServerLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\bin\Debug\net8.0\HTTPServer.cs
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\bin\Debug\net8.0\HttpServerLibrary.deps.json
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\bin\Debug\net8.0\HttpServerLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\bin\Debug\net8.0\HttpServerLibrary.pdb
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.AssemblyInfoInputs.cache
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.AssemblyInfo.cs
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.csproj.CoreCompileInputs.cache
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.sourcelink.json
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\refint\HttpServerLibrary.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.pdb
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\HttpServerLibrary\obj\Debug\net8.0\ref\HttpServerLibrary.dll

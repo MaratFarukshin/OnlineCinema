@@ -23,10 +23,10 @@ public class CatalogEndPoint : BaseEndPoint
     [Get("catalog")]
     public IHttpResponceResult GetMoviesPage()
     {
-        if (!SessionStorage.IsAuthorized(Context))
-        {
-            return Redirect("login");
-        }
+        // if (!SessionStorage.IsAuthorized(Context))
+        // {
+        //     return Redirect("login");
+        // }
         
         try
         {
@@ -69,13 +69,11 @@ public class CatalogEndPoint : BaseEndPoint
     [Post("catalog")]
     public IHttpResponceResult PostMoviesPage(string genre)
     {
-        Console.WriteLine( genre );
-        return Html(genre);
         if (genre == "all")
             return Redirect("catalog");
 
 
-        var films = _dbContext.GetByAll().Where(x => x.genre == genre);
+        var films = _dbContext.GetByAll().Where(x => x.genre == Translator(genre));
 
         var templatePath = @"Templates\Pages\Catalog\index.html";
         if (!File.Exists(templatePath))
@@ -106,4 +104,25 @@ public class CatalogEndPoint : BaseEndPoint
         return Html(htmlContent);
     }
 
+
+    public static string Translator(string genre)
+    {
+        switch (genre)
+        {
+            case "drama":
+                return "Драма";
+            case "comedy":
+                return "Комедия";
+            case "triller":
+                return "Триллер";
+            case "horror":
+                return "Хоррор";
+            case "criminal":
+                return "Криминал";
+            default:
+                return null;
+        }
+    }
+
 }
+

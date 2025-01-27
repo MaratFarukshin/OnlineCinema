@@ -9,16 +9,9 @@ namespace HttpServerLibrary.Handlers;
 /// </summary>
 public class StaticFilesHandler : Handler
 {
-    /// <summary>
-    /// The path to the directory containing static files
-    /// </summary>
     private readonly string _staticDirectoryPath =
         $"{Directory.GetCurrentDirectory()}\\{AppConfig.StaticDirectoryPath}";
 
-    /// <summary>
-    /// Handles an HTTP request
-    /// </summary>
-    /// <param name="context">The context of the HTTP request.</param>
     public override void HandleRequest(HttpRequestContext context)
     {
         Console.WriteLine("Handling request");
@@ -33,21 +26,11 @@ public class StaticFilesHandler : Handler
         {
             try
             {
-                Console.WriteLine("IS GET & IS FILE");
                 string? relativePath = context.Request.Url?.AbsolutePath.Trim('/');
                 string filePath = Path.Combine(_staticDirectoryPath,
                     string.IsNullOrEmpty(relativePath)
                         ? "index.html"
-                        : relativePath); // Если нет обращения к конкретному файлу, обращаться к index.html
-                // TODO try catch 
-                // Если файла не существует вернуть 404
-                // if (!File.Exists(filePath))
-                // {
-                //     // TODO: Implement more robust 404 handling with custom error page and proper status code.
-                //     filePath = Path.Combine(_staticDirectoryPath, "err404.html");
-                //     context.Response.StatusCode = (int)HttpStatusCode.NotFound;
-                // }
-                //
+                        : relativePath);
                 byte[] responseFile = File.ReadAllBytes(filePath); // Побитовое чтение html файла
                 // Set Content Type based on file extension
                 context.Response.ContentType = GetContentType(Path.GetExtension(filePath));
@@ -58,23 +41,14 @@ public class StaticFilesHandler : Handler
             }
             catch
             {
-                Console.WriteLine("BAD BAD BAD");
             }
         }
         else if (Successor != null)
         {
             // передача запроса к следующему handler`у в "цепи"
-            Console.WriteLine("Switch to next handler");
             Successor.HandleRequest(context);
         }
     }
-
-    /// <summary>
-    /// Gets the content type of a file based on its extension.
-    /// </summary>
-    /// <param name="extension">The file extension</param>
-    /// <returns>The content type</returns>
-    /// <exception cref="ArgumentNullException">Thrown if the extension is null.</exception>
     private static string GetContentType(string? extension)
     {
         if (extension == null)

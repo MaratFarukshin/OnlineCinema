@@ -56,3 +56,15 @@ C:\documents\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateE
 C:\documents\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\refint\TemplateEngine.dll
 C:\documents\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.pdb
 C:\documents\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\ref\TemplateEngine.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\bin\Debug\net8.0\TemplateEngine.deps.json
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\bin\Debug\net8.0\TemplateEngine.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\bin\Debug\net8.0\TemplateEngine.pdb
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.AssemblyInfoInputs.cache
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.AssemblyInfo.cs
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.csproj.CoreCompileInputs.cache
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.sourcelink.json
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\refint\TemplateEngine.dll
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\TemplateEngine.pdb
+C:\documents\Online_Cinema\OnlineCinema\OnlineCinema\TemplateEngine\obj\Debug\net8.0\ref\TemplateEngine.dll

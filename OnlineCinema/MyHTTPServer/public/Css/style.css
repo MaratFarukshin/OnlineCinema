@@ -4432,7 +4432,11 @@ body.embed .entity-header .video-js {
     white-space: nowrap;
     padding: 1em;
     font-size: 1.2em;
-    overflow: auto
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .filters-item {

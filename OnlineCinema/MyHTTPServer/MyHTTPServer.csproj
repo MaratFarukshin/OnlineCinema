@@ -2933,7 +2933,7 @@
       <None Update="public\images\ebbee7d971e0c8cc915a5dde32fe348e.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="public\images\profile-1335-svgrepo-com (2).png">
+      <None Update="public\images\profileIcon.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
